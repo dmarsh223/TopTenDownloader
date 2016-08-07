@@ -33,7 +33,12 @@ public class Application {
         this.releaseDate = releaseDate;
     }
 
+    @Override
+    public String toString() {
+        return "Name: " + getName() + "\n" +
+                "Artist: " + getArtist() + "\n" +
+                "Release date: " + getReleaseDate() + "\n";
 
 
-
+    }
 }
