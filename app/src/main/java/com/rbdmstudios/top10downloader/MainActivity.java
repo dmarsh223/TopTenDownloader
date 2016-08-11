@@ -32,10 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private ListView listApps;
 
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,19 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
         DownloadData downloadData = new DownloadData();
         downloadData.execute("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/toppaidapplications/limit=25/xml");
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
@@ -95,45 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     private class DownloadData extends AsyncTask<String, Void, String> {
@@ -189,42 +133,5 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
